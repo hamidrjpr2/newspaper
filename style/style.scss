@@ -1,0 +1,307 @@
+@font-face {
+    font-family: article;
+    src: url('../fonts/Ace\ Records.ttf');
+}
+
+@font-face {
+    font-family: text;
+    src: url('../fonts/Nimrod\ Cyr.ttf');
+}
+
+* {
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: text;
+}
+
+%bt {
+    border: 2px solid black;
+}
+
+$textcolor : #4E331C;
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+body {
+    margin-top: 50px;
+    background-color: #E1AD6D;
+    display: flex;
+    justify-content: center;
+}   
+
+main {
+    // The whole page
+    width: 80%;
+    background-color: #E1C3A1;
+    box-shadow: 0 0 5px #4E331C,
+                0 0 20px #4E331C,
+                0 0 30px #4E331C;
+
+    color: $textcolor;
+
+    >.row {
+        // page row div
+        
+        padding: 50px;
+        
+        >header {
+            // header
+            display: flex;
+            width: 100%;
+            height: 110px;
+            justify-content: center;
+            align-items: center;
+            
+            margin-bottom: 20px;
+
+            >h1 {
+                // header title
+                font-size: 100px;
+                font-family: article;
+            }
+
+        }
+
+        >nav.row {
+            // navbar below header
+            justify-content: space-between; 
+            font-size: 20px;
+            font-weight: 200;
+            font-family: text;
+            border-top: 2px solid $textcolor;
+            border-bottom: 2px solid $textcolor;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+
+        // End of top
+
+        >section {
+            display: grid;
+            width: 100%;
+            height: 1400px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+
+            >div {
+                // section all divs
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                
+                flex-wrap: wrap;
+
+                &:nth-of-type(1) {
+                    // section title 
+                    grid-column: 1 / span 2;
+
+                    // GOSSIP OF THE OLD
+                    h2 {
+                        text-transform: uppercase;
+                        font-size: 120px;
+                        width: 100%;
+                        word-spacing: 30px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    margin-top: 0;
+                    // WORLD
+                    h2 {
+                        text-transform: uppercase;
+                        font-size: 120px;
+                        word-spacing: 30px;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    // The pic
+                    grid-row: 2 / span 8;
+                    grid-column: 2 / span 1;
+                    overflow: hidden;
+
+                    >img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                
+                &:nth-of-type(4) {
+                    // left side after titles small division
+                    grid-row: 3 / span 3;
+                    align-items: start;
+                    padding: 10px;
+                    display: block;
+
+                    >* {
+                        margin: 60px 10px;
+                    }
+
+                    >h3 {
+                        margin-top: 0;
+                        font-size: 60px;
+                    }
+
+                    // the text of the division
+                    >p {
+                        font-size: 25px;
+                    }
+                }
+                &:nth-of-type(5) {
+                    grid-row: 6 / span 5;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+
+                    >div {
+                        // 3 container divs of the left division below the Reception
+                        padding: 15px;
+                        width: 33.3333%;
+                        height: 100%;
+                        
+
+                        >p {
+                            color: $textcolor;
+                            margin: 12px 0;
+                        }
+
+                    }
+                }
+                &:nth-of-type(6) {
+                    grid-column: 2 / span 1;
+                    grid-row: 10 / span 1;
+                    align-items: start;
+                }
+            }
+        }
+
+        // end of main body
+
+        >.foot {
+            // Newspaper footer
+            display: flex;
+            width: 100%;
+            height: 500px;
+            
+
+            >div {
+                height: 100%;
+                border: 4px solid #4E331C;
+            }
+
+            >.left {
+                width: 30%;
+                border-right: none;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                
+                >* {
+                    margin: 10px 5px;
+                }
+                
+                >h3 {
+                    font-size: 30px;
+                    height: 15%;
+                }
+
+                >p {
+                    height: 15%;
+                }
+
+                >figure {
+                    display: flex;
+                    width: 100%;
+                    height: 70%;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            >.right {
+                width: 70%;
+                
+                // foot header
+                >.row {
+                    height: 15%;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $textcolor;
+                    
+
+                    // foot header text
+                    h3 {
+                        font-size: 40px;
+                        color: snow;
+                    }
+
+                }
+
+                >section {
+                    // foot under foot header (the body of the right foot division)
+                    width: 100%;
+                    display: flex;
+                    height: 85%;
+                    padding: 20px;
+                    flex-wrap: wrap;
+                    align-content: start;
+
+                    // the divs in the right foot division body
+                    >div {
+                        width: 50%;
+                        height: 85%;
+
+                        &:nth-of-type(1) {
+                            display: flex;
+                            width: 100%;
+                            height: 15% ;
+                        }
+
+                        &:nth-of-type(2) {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+
+                            // two colums paragraph containers
+                            >div {
+                                overflow: hidden;
+                                height: 100%;
+                                width: 50%;
+                                align-content: start;
+                                padding: 20px;
+                            }
+
+                        }
+                    }
+                    >.pic {
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+        // end of foot
+    }
+}

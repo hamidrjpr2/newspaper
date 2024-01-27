@@ -1,0 +1,348 @@
+@font-face {
+  font-family: article;
+  src: url("../fonts/Ace Records.ttf");
+}
+
+@font-face {
+  font-family: text;
+  src: url("../fonts/Nimrod Cyr.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: text;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+body {
+  margin-top: 50px;
+  background-color: #E1AD6D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  width: 80%;
+  background-color: #E1C3A1;
+  -webkit-box-shadow: 0 0 5px #4E331C, 0 0 20px #4E331C, 0 0 30px #4E331C;
+          box-shadow: 0 0 5px #4E331C, 0 0 20px #4E331C, 0 0 30px #4E331C;
+  color: #4E331C;
+}
+
+main > .row {
+  padding: 50px;
+}
+
+main > .row > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 110px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+main > .row > header > h1 {
+  font-size: 100px;
+  font-family: article;
+}
+
+main > .row > nav.row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: text;
+  border-top: 2px solid #4E331C;
+  border-bottom: 2px solid #4E331C;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+main > .row > section {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 1400px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+main > .row > section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main > .row > section > div:nth-of-type(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+main > .row > section > div:nth-of-type(1) h2 {
+  text-transform: uppercase;
+  font-size: 120px;
+  width: 100%;
+  word-spacing: 30px;
+}
+
+main > .row > section > div:nth-of-type(2) {
+  margin-top: 0;
+}
+
+main > .row > section > div:nth-of-type(2) h2 {
+  text-transform: uppercase;
+  font-size: 120px;
+  word-spacing: 30px;
+}
+
+main > .row > section > div:nth-of-type(3) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2 / span 8;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  overflow: hidden;
+}
+
+main > .row > section > div:nth-of-type(3) > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main > .row > section > div:nth-of-type(4) {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3 / span 3;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 10px;
+  display: block;
+}
+
+main > .row > section > div:nth-of-type(4) > * {
+  margin: 60px 10px;
+}
+
+main > .row > section > div:nth-of-type(4) > h3 {
+  margin-top: 0;
+  font-size: 60px;
+}
+
+main > .row > section > div:nth-of-type(4) > p {
+  font-size: 25px;
+}
+
+main > .row > section > div:nth-of-type(5) {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 5;
+  grid-row: 6 / span 5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+main > .row > section > div:nth-of-type(5) > div {
+  padding: 15px;
+  width: 33.3333%;
+  height: 100%;
+}
+
+main > .row > section > div:nth-of-type(5) > div > p {
+  color: #4E331C;
+  margin: 12px 0;
+}
+
+main > .row > section > div:nth-of-type(6) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 1;
+  grid-row: 10 / span 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+main > .row > .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+main > .row > .foot > div {
+  height: 100%;
+  border: 4px solid #4E331C;
+}
+
+main > .row > .foot > .left {
+  width: 30%;
+  border-right: none;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main > .row > .foot > .left > * {
+  margin: 10px 5px;
+}
+
+main > .row > .foot > .left > h3 {
+  font-size: 30px;
+  height: 15%;
+}
+
+main > .row > .foot > .left > p {
+  height: 15%;
+}
+
+main > .row > .foot > .left > figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70%;
+}
+
+main > .row > .foot > .left > figure > img {
+  width: 100%;
+  height: 100%;
+}
+
+main > .row > .foot > .right {
+  width: 70%;
+}
+
+main > .row > .foot > .right > .row {
+  height: 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #4E331C;
+}
+
+main > .row > .foot > .right > .row h3 {
+  font-size: 40px;
+  color: snow;
+}
+
+main > .row > .foot > .right > section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85%;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+main > .row > .foot > .right > section > div {
+  width: 50%;
+  height: 85%;
+}
+
+main > .row > .foot > .right > section > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 15%;
+}
+
+main > .row > .foot > .right > section > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main > .row > .foot > .right > section > div:nth-of-type(2) > div {
+  overflow: hidden;
+  height: 100%;
+  width: 50%;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  padding: 20px;
+}
+
+main > .row > .foot > .right > section > .pic {
+  overflow: hidden;
+}
+
+main > .row > .foot > .right > section > .pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */
